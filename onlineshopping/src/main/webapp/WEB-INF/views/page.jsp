@@ -69,6 +69,13 @@
 				<%@include file="./contact.jsp"%>
 			</c:if>
 			<!-- End Of: Contact Section -->
+			
+			<!--*************************** List Of Products Section ***********************-->
+			<!-- Loads only when user clicks show all products OR show category products -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="./listProducts.jsp"%>
+			</c:if>
+			<!-- End Of: Contact Section -->
 
 		</div>
 
@@ -86,7 +93,7 @@
 		<script src="${js}/jquery.js"></script>
 
 		<!-- Bootstrap Core Javascript -->
-		<script src="${js}/bootstrap.min.js"></script>
+		<script src="${js}/bootstrap.js"></script>
 
 		<!-- Self Coded Javascript -->
 		<script type="text/javascript" src="${js}/myapp.js"></script>

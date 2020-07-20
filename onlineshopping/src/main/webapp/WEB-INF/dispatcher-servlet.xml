@@ -12,6 +12,7 @@
 
 	<!-- Scan all the components -->
    	<context:component-scan base-package="net.m2m.onlineshopping.controller"/>
+   	<context:component-scan base-package="net.m2m.shoppingbackend.daoImpl"/>
 	
 	<!-- View Resolver: Map the logical file name to the actual physical filename -->
 	<bean id="viewResolver"
